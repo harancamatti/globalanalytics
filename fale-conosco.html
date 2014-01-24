@@ -6,6 +6,21 @@
     <link rel="stylesheet" href="_css/estilo.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
     <script type="text/javascript" src="_javascript/funcoes.js"></script>
+    <meta name="robots" content="nofollow" />
+    <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-35852760-2']);
+    _gaq.push(['_setDomainName', 'globalanalytics.com.br']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+    </script>
 
 </head>
 <body>
@@ -16,7 +31,7 @@
                 <h2>A revolução do Google está chegando</h2>
             </hgroup>
 
-            <img id="icone" src="_imagens/icone-contato.png" alt="">
+            <img id="icone" src="_imagens/contato.png" alt="">
             <nav id="menu">
                 <h1>Menu Principal</h1>
                 <ul>
@@ -28,45 +43,77 @@
                 </ul>
             </nav>
         </header> 
-
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
-
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
-
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
-
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
-
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
+        <section id="corpo-full">
+            <article id="noticia-principal">
+                <header id="cabecalho-artigo">
+                    <hgroup>    
+                        <h3>Fale Conosco > Contato</h3>
+                        <h1>Formulário de Contato</h1>
+                        <h2>por Haran Camatti</h2>
+                        <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+                    </hgroup>
+                </header>
 
 
-[BOTÃO ENVIAR]
 
-<footer id="rodape">
-    <p>Copyright 2013 - by Haran Camatti <br>
-    <a href="http://facebook.com/haran.camatti" target="blank">Facebook </a> | 
-    <a href="http://twitter.com/haranbmx" target="blank">Twitter</a></p>
-</footer>
-    </div>
-</body>
-</html>
+                <form action="" name="formulario" id="form-contato">
+                    <fieldset id="identificacao">
+                        <legend id="form">Identificação do Usuário</legend>
+                            Nome: <input type="text" name="nome" value="Nome Completo" id="detalhe-input"><br>
+                            Senha:<input type="password" size="8" name"password" value="8 Dígitos" id="detalhe-input"><br>
+                            <hr id="linha-contato">
+                            E-mail: <input type="email" id="detalhe-input" value="Separe por vírgulas"> <br>
+
+                        
+                        <fieldset id="fieldset-interno">
+                            <legend id="form">Sexo:</legend>
+                            <input type="checkbox" name="masculino" value="masculino"> Masculino <br>
+                            <input type="checkbox" name="feminino" value="feminino"> Feminino <br>
+
+                        </fieldset>
+                            Data de Nascimento: <input type="date"><br>
+                    </fieldset>
+                    <fieldset id="endereco">
+                        <legend id="form">Endereço</legend>
+                        Logradouro: <input id="detalhe-input" type="text" value="Endereço" style="width: 150px;">
+                        Número: <input id="detalhe-input"type="number" maxlength="5" style="width:100px;"><br>
+                        
+                        Estado: <br>
+                        Cidade: <input id="detalhe-input" type="text" value="Sua Cidade" style="width: 150px;"><br>
+                    </fieldset>
+                    <fieldset id="mensagem">                        
+                        <legend id="form">Mensagem</legend>
+                        Grau de Urgência: Mín<input type="range" min="1" max='10' value="3">Máx <br><br>
+                        Mensagem: <br><textarea name="mensagem" id="" cols="50" rows="5">Sua mensagem...</textarea><br>
+                    </fieldset>
+                    <fieldset id="quero-glass">
+                        <legend id="form">Quero um Google Glass</legend>
+                        <input id="detalhe-input" type="checkbox" checked>
+                        Gostaria de adquirir um Google Glass quando disponível <br>
+                        Cor:<input id="detalhe-input" type="color" value="#001DFF"> <br>
+                        Quantidade: <input id="detalhe-input" type="number" maxlength="3" style="width: 75px;" value="0"><br>
+                        Preço Total: R$ <input id="detalhe-input" type="text" value="Total a Pagar">
+                    </fieldset>
+                   
+                
+
+                
+                
+
+                
+                    
+                
+
+
+                [BOTÃO ENVIAR]
+            </form>
+        </article>  
+
+        <footer id="rodape">
+            <p>Copyright 2013 - by Haran Camatti <br>
+                <a href="http://facebook.com/haran.camatti" target="blank">Facebook </a> | 
+                <a href="http://twitter.com/haranbmx" target="blank">Twitter</a></p>
+            </footer>
+        </div>
+    </body>
+    </html>
