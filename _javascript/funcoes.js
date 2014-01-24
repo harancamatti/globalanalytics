@@ -9,15 +9,15 @@ function js() {
 
 	$('#menu li')
 		.mouseout(function() {
-			if (page == '/home/haran/globalanalytics/index.html') {
+			if (page == '/index.html') {
 				$('#icone').attr("src", "_imagens/glass-oculos-preto-peq.png")
-			} else if (page == '/home/haran/globalanalytics/specs.html') {
+			} else if (page == '/specs.html') {
 				$('#icone').attr("src", "_imagens/especificacoes.png")
-			} else if (page == '/home/haran/globalanalytics/fotos.html') {
+			} else if (page == '/fotos.html') {
 				$('#icone').attr("src", "_imagens/fotos.png")
-			} else if (page == '/home/haran/globalanalytics/multimidia.html') {
+			} else if (page == '/multimidia.html') {
 				$('#icone').attr("src", "_imagens/multimidia.png")
-			} else if (page == '/home/haran/globalanalytics/fale-conosco.html') {
+			} else if (page == '/fale-conosco.html') {
 				$('#icone').attr("src", "_imagens/contato.png")
 			}
 		});

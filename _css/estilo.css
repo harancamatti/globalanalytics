@@ -250,6 +250,9 @@ fieldset#fieldset-interno{
 	margin-bottom: 25px;
 	margin-left: 25px;
 }
+fieldset#fieldset-interno:focus{
+	box-shadow: 1px 2px 30px #0099FF;
+}
 fieldset#identificacao {
 	background: url("../_imagens/icone-contato.png") no-repeat 270px 160px;
 }
@@ -272,10 +275,28 @@ input#detalhe-input{
 	color: #606060;
 	margin-bottom: 15px;
 }
+input#detalhe-input:focus{
+	box-shadow: 1px 2px 30px #0099FF;
+}
 textarea{
 	font-family: verdana;
 	font-size: 12pt;
 	color: #606060;
 	background-color: rgba(255,255,255,.5);
 
+}
+textarea:focus{
+	box-shadow: 1px 2px 30px #0099FF;
+}
+input#botao-enviar{
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding: 5px;
+	font-family: verdana;
+	font-size: 12pt;
+	color: #606060;
+}
+input#botao-enviar:hover{
+	box-shadow: 1px 2px 30px #0099FF;
+	
 }

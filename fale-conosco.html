@@ -59,32 +59,32 @@
                 <form action="" name="formulario" id="form-contato">
                     <fieldset id="identificacao">
                         <legend id="form">Identificação do Usuário</legend>
-                            Nome: <input type="text" name="nome" value="Nome Completo" id="detalhe-input"><br>
-                            Senha:<input type="password" size="8" name"password" value="8 Dígitos" id="detalhe-input"><br>
+                            Nome: <input type="text" name="nome" placeholder="Nome Completo" id="detalhe-input" autofocus><br>
+                            Senha:<input type="password" size="8" name"password" placeholder="8 Dígitos" id="detalhe-input"><br>
                             <hr id="linha-contato">
-                            E-mail: <input type="email" id="detalhe-input" value="Separe por vírgulas"> <br>
+                            E-mail: <input type="email" id="detalhe-input" placeholder="Separe por vírgulas"> <br>
 
                         
                         <fieldset id="fieldset-interno">
                             <legend id="form">Sexo:</legend>
-                            <input type="checkbox" name="masculino" value="masculino"> Masculino <br>
-                            <input type="checkbox" name="feminino" value="feminino"> Feminino <br>
+                            <input id="detalhe-input" type="checkbox" name="sexo" placeholder="masculino"> Masculino <br>
+                            <input id="detalhe-input" type="checkbox" name="sexo" placeholder="feminino"> Feminino <br>
 
                         </fieldset>
-                            Data de Nascimento: <input type="date"><br>
+                            Data de Nascimento: <input type="date" id="detalhe-input"><br>
                     </fieldset>
                     <fieldset id="endereco">
                         <legend id="form">Endereço</legend>
-                        Logradouro: <input id="detalhe-input" type="text" value="Endereço" style="width: 150px;">
+                        Logradouro: <input id="detalhe-input" type="text" placeholder="Endereço" style="width: 150px;">
                         Número: <input id="detalhe-input"type="number" maxlength="5" style="width:100px;"><br>
                         
                         Estado: <br>
-                        Cidade: <input id="detalhe-input" type="text" value="Sua Cidade" style="width: 150px;"><br>
+                        Cidade: <input id="detalhe-input" type="text" placeholder="Sua Cidade" style="width: 150px;"><br>
                     </fieldset>
                     <fieldset id="mensagem">                        
                         <legend id="form">Mensagem</legend>
-                        Grau de Urgência: Mín<input type="range" min="1" max='10' value="3">Máx <br><br>
-                        Mensagem: <br><textarea name="mensagem" id="" cols="50" rows="5">Sua mensagem...</textarea><br>
+                        Grau de Urgência: Mín<input type="range" id="detalhe-input" min="1" max='10' value="3">Máx <br><br>
+                        Mensagem: <br><textarea name="mensagem" id="" cols="50" rows="5" placeholder="Sua mensagem..."></textarea><br>
                     </fieldset>
                     <fieldset id="quero-glass">
                         <legend id="form">Quero um Google Glass</legend>
@@ -92,20 +92,10 @@
                         Gostaria de adquirir um Google Glass quando disponível <br>
                         Cor:<input id="detalhe-input" type="color" value="#001DFF"> <br>
                         Quantidade: <input id="detalhe-input" type="number" maxlength="3" style="width: 75px;" value="0"><br>
-                        Preço Total: R$ <input id="detalhe-input" type="text" value="Total a Pagar">
+                        Preço Total: R$ <input id="detalhe-input" type="text" placeholder="Total a Pagar">
                     </fieldset>
-                   
-                
 
-                
-                
-
-                
-                    
-                
-
-
-                [BOTÃO ENVIAR]
+                <input type="submit" id="botao-enviar" value="Enviar">
             </form>
         </article>  
 
