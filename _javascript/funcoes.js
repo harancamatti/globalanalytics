@@ -9,16 +9,16 @@ function js() {
 
 	$('#menu li')
 		.mouseout(function() {
-			if (page == '/home/haran/palestra%20html%20e%20js/palestra/index.html') {
+			if (page == '/home/haran/globalanalytics/index.html') {
 				$('#icone').attr("src", "_imagens/glass-oculos-preto-peq.png")
-			} else if (page == '/home/haran/palestra%20html%20e%20js/palestra/specs.html') {
+			} else if (page == '/home/haran/globalanalytics/specs.html') {
 				$('#icone').attr("src", "_imagens/especificacoes.png")
-			} else if (page == '/home/haran/palestra%20html%20e%20js/palestra/fotos.html') {
+			} else if (page == '/home/haran/globalanalytics/fotos.html') {
 				$('#icone').attr("src", "_imagens/fotos.png")
-			} else if (page == '/home/haran/palestra%20html%20e%20js/palestra/multimidia.html') {
+			} else if (page == '/home/haran/globalanalytics/multimidia.html') {
 				$('#icone').attr("src", "_imagens/multimidia.png")
-			} else if (page == '/home/haran/palestra%20html%20e%20js/palestra/fale-conosco.html') {
-				$('#icone').attr("src", "_imagens/icone-contato.png")
+			} else if (page == '/home/haran/globalanalytics/fale-conosco.html') {
+				$('#icone').attr("src", "_imagens/contato.png")
 			}
 		});
 	$('#menu li:nth-child(1)')
@@ -41,6 +41,6 @@ function js() {
 		});
 	$('#menu li:nth-child(5)')
 		.mouseover(function() {
-			$('#icone').attr("src", "_imagens/icone-contato.png")
+			$('#icone').attr("src", "_imagens/contato.png")
 		});
 }

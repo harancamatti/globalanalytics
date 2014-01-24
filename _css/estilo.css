@@ -227,3 +227,55 @@ footer#rodape{
 footer#rodape p{
 	text-align: center;
 }
+
+form#form-contato{
+	display: block;
+	width: 500px;
+	margin: auto;
+
+}
+
+legend#form {
+	font-family: verdana;
+	font-size: 12pt;
+	color: #606060;
+	font-weight: bold;
+}
+fieldset {
+	margin-top: 25px;
+	padding: 20px;
+}
+fieldset#fieldset-interno{
+	width: 150px;
+	margin-bottom: 25px;
+	margin-left: 25px;
+}
+fieldset#identificacao {
+	background: url("../_imagens/icone-contato.png") no-repeat 270px 160px;
+}
+fieldset#endereco{
+	background: url("../_imagens/icone-endereco.png") no-repeat 270px -40px;
+}
+fieldset#mensagem{
+	background: url("../_imagens/icone-mensagem.png") no-repeat 270px 35px;
+}
+fieldset#quero-glass{
+	background: url("../_imagens/icone-pagamento.png") no-repeat 270px 25px;
+}
+hr#linha-contato{
+	width: 430px;
+	color: #606060
+}
+input#detalhe-input{
+	font-family: verdana;
+	font-size: 12pt;
+	color: #606060;
+	margin-bottom: 15px;
+}
+textarea{
+	font-family: verdana;
+	font-size: 12pt;
+	color: #606060;
+	background-color: rgba(255,255,255,.5);
+
+}
