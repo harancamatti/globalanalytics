@@ -8,19 +8,30 @@
     <script type="text/javascript" src="_javascript/funcoes.js"></script>
     <meta name="robots" content="nofollow" />
     <script type="text/javascript">
+        var _gas = _gas || [];
+        _gas.push(['_setAccount', 'UA-35852760-2']); // REPLACE WITH YOUR GA NUMBER
+        _gas.push(['_setDomainName', 'globalanalytics.com.br']); // REPLACE WITH YOUR DOMAIN
+        _gas.push(['_trackPageview']);
+        _gas.push(['_gasTrackMaxScroll']);
+        _gas.push(['_gasTrackOutboundLinks']);
+        _gas.push(['_gasTrackVideo']);
+        _gas.push(['_gasTrackForms']);      
+        _gas.push(['_gasTrackAudio']);
+        
+        
 
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-35852760-2']);
-    _gaq.push(['_setDomainName', 'globalanalytics.com.br']);
-    _gaq.push(['_trackPageview']);
 
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-    </script>
+        (function() {
+        var ga = document.createElement('script');
+        ga.id = 'gas-script';
+        ga.setAttribute('data-use-dcjs', 'false'); // CHANGE TO TRUE FOR DC.JS SUPPORT
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = '//cdnjs.cloudflare.com/ajax/libs/gas/1.11.0/gas.min.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+        })();
+    </script> 
 
 </head>
 <body>
@@ -60,9 +71,9 @@
                     <fieldset id="identificacao">
                         <legend id="form">Identificação do Usuário</legend>
                             Nome: <input type="text" name="nome" placeholder="Nome Completo" id="detalhe-input" autofocus><br>
-                            Senha:<input type="password" size="8" name"password" placeholder="8 Dígitos" id="detalhe-input"><br>
+                            Senha:<input type="password" size="8" name="password" placeholder="8 Dígitos" id="detalhe-input"><br>
                             <hr id="linha-contato">
-                            E-mail: <input type="email" id="detalhe-input" placeholder="Separe por vírgulas"> <br>
+                            E-mail: <input type="email" name="email" id="detalhe-input" placeholder="Separe por vírgulas"> <br>
 
                         
                         <fieldset id="fieldset-interno">
@@ -71,27 +82,27 @@
                             <input id="detalhe-input" type="checkbox" name="sexo" placeholder="feminino"> Feminino <br>
 
                         </fieldset>
-                            Data de Nascimento: <input type="date" id="detalhe-input"><br>
+                            Data de Nascimento: <input type="date" name="data_nascimento" id="detalhe-input"><br>
                     </fieldset>
                     <fieldset id="endereco">
                         <legend id="form">Endereço</legend>
-                        Logradouro: <input id="detalhe-input" type="text" placeholder="Endereço" style="width: 150px;">
-                        Número: <input id="detalhe-input"type="number" maxlength="5" style="width:100px;"><br>
+                        Logradouro: <input id="detalhe-input" name="logradouro" type="text" placeholder="Endereço" style="width: 150px;">
+                        Número: <input id="detalhe-input" name="numero" type="number" maxlength="5" style="width:100px;"><br>
                         
-                        Estado: <br>
-                        Cidade: <input id="detalhe-input" type="text" placeholder="Sua Cidade" style="width: 150px;"><br>
+                        Estado: <input id="detalhe-input" type="text" name="estado" placeholder="Estado" style="width: 50px;"><br>
+                        Cidade: <input id="detalhe-input" type="text" name="cidade" placeholder="Sua Cidade" style="width: 150px;"><br>
                     </fieldset>
                     <fieldset id="mensagem">                        
                         <legend id="form">Mensagem</legend>
-                        Grau de Urgência: Mín<input type="range" id="detalhe-input" min="1" max='10' value="3">Máx <br><br>
+                        Grau de Urgência: Mín<input name="urgencia" type="range" id="detalhe-input" min="1" max='10' value="3">Máx <br><br>
                         Mensagem: <br><textarea name="mensagem" id="" cols="50" rows="5" placeholder="Sua mensagem..."></textarea><br>
                     </fieldset>
                     <fieldset id="quero-glass">
                         <legend id="form">Quero um Google Glass</legend>
                         <input id="detalhe-input" type="checkbox" checked>
                         Gostaria de adquirir um Google Glass quando disponível <br>
-                        Cor:<input id="detalhe-input" type="color" value="#001DFF"> <br>
-                        Quantidade: <input id="detalhe-input" type="number" maxlength="3" style="width: 75px;" value="0"><br>
+                        Cor:<input id="detalhe-input" type="color" name="cor" value="#001DFF"> <br>
+                        Quantidade: <input id="detalhe-input" name="quantidade" type="number" maxlength="3" style="width: 75px;" value="0"><br>
                         Preço Total: R$ <input id="detalhe-input" type="text" placeholder="Total a Pagar">
                     </fieldset>
 

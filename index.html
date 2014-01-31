@@ -6,22 +6,35 @@
 	<link rel="stylesheet" href="_css/estilo.css">
 	<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 	<script type="text/javascript" src="_javascript/funcoes.js"></script>
+	<script type="text/javascript" src="_javascript/gad.js"></script>
 	<meta name="robots" content="nofollow" />
+
 	<script type="text/javascript">
+        var _gas = _gas || [];
+        _gas.push(['_setAccount', 'UA-35852760-2']); // REPLACE WITH YOUR GA NUMBER
+        _gas.push(['_setDomainName', 'globalanalytics.com.br']); // REPLACE WITH YOUR DOMAIN
+        _gas.push(['_trackPageview']);
+        _gas.push(['_gasTrackMaxScroll']);
+        _gas.push(['_gasTrackOutboundLinks']);
+        _gas.push(['_gasTrackVideo']);
+        _gas.push(['_gasTrackForms']);      
+        _gas.push(['_gasTrackAudio']);
+        
+        
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-35852760-2']);
-  _gaq.push(['_setDomainName', 'globalanalytics.com.br']);
-  _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
+        (function() {s
+        var ga = document.createElement('script');
+        ga.id = 'gas-script';
+        ga.setAttribute('data-use-dcjs', 'false'); // CHANGE TO TRUE FOR DC.JS SUPPORT
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = '//cdnjs.cloudflare.com/ajax/libs/gas/1.11.0/gas.min.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+        })();
+    </script> 
+	
 </head>
 <body>
 	<div id="interface">
@@ -55,7 +68,7 @@
 		</header>
 
 	<h2>O que é</h2>
-	<p>O Google Glass é um acessório em forma de óculos que possibilita a interação dos usuários com diversos conteúdos em realidade aumentada. Também chamado de <a href="http://glass.google.com" target="_blank">Project Glass</a>visto para 2014, e seu preço deve ser de US$ 1,5 mil. Atualmente o Google Glass encontra-se em fase de testes e já possui um vídeo totalmente gravado com o dispositivo. Além disso, a companhia de buscas registrou novas patentes anti-furto e de desbloqueio de tela para o acessório.</p>
+	<p>O Google Glass é um acessório em forma de óculos que possibilita a interação dos usuários com diversos conteúdos em realidade aumentada. Também chamado de <a href="http://glass.google.com" target="_blank">Project Glass</a> visto para 2014, e seu preço deve ser de US$ 1,5 mil. Atualmente o Google Glass encontra-se em fase de testes e já possui um vídeo totalmente gravado com o dispositivo. Além disso, a companhia de buscas registrou novas patentes anti-furto e de desbloqueio de tela para o acessório.</p>
 
 	<figure class="foto-legenda">
 		<img src="_imagens/glass-quadro-homem-mulher.jpg" alt="">
@@ -92,7 +105,7 @@
 	<h1>Outras Notícias</h1>
 	<h2>Vídeo mais recente</h2>
 
-	<iframe width="370" height="208" src="//www.youtube.com/embed/P42H8iOxWOE" frameborder="0" allowfullscreen></iframe>
+	<iframe src="//player.vimeo.com/video/31616548?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="370" height="208" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/31616548">Google - Analytics</a> from <a href="http://vimeo.com/user7606981">tenthree</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 	<h2>Novidades no Glass</h2>
 	<p>O Google enfim revelou as especificações completas do Google Glass, e com ele uma surpresa ainda inédita no mercado: a gigante das buscas usará um sistema de áudio baseado na transdução por condução. Através das hastes dos óculos, o som será transmitido para o ouvido do usuário por meio de microvibrações em determinados ossos de sua cabeça, sem usar nenhum tipo de alto-falante.</p>

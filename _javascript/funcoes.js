@@ -44,3 +44,8 @@ function js() {
 			$('#icone').attr("src", "_imagens/contato.png")
 		});
 }
+function focus(){
+	if(page=='/fale-conosco.html'){
+		
+	}
+}

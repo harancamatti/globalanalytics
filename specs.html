@@ -9,19 +9,30 @@
 	<script type="text/javascript" src="_javascript/funcoes.js"></script>
 	<meta name="robots" content="nofollow" />
 	<script type="text/javascript">
+        var _gas = _gas || [];
+        _gas.push(['_setAccount', 'UA-35852760-2']); // REPLACE WITH YOUR GA NUMBER
+        _gas.push(['_setDomainName', 'globalanalytics.com.br']); // REPLACE WITH YOUR DOMAIN
+        _gas.push(['_trackPageview']);
+        _gas.push(['_gasTrackMaxScroll']);
+        _gas.push(['_gasTrackOutboundLinks']);
+        _gas.push(['_gasTrackVideo']);
+        _gas.push(['_gasTrackForms']);      
+        _gas.push(['_gasTrackAudio']);
+        
+        
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-35852760-2']);
-  _gaq.push(['_setDomainName', 'globalanalytics.com.br']);
-  _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+        (function() {
+        var ga = document.createElement('script');
+        ga.id = 'gas-script';
+        ga.setAttribute('data-use-dcjs', 'false'); // CHANGE TO TRUE FOR DC.JS SUPPORT
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = '//cdnjs.cloudflare.com/ajax/libs/gas/1.11.0/gas.min.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+        })();
+    </script> 
 
 </head>
 <body>
@@ -60,8 +71,14 @@
 	<p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
 	</p>
 	<section class="conteudo">
-		<img src="_imagens/glass-esquema-marcado.jpg" height="280" width="500" alt="">
-		<iframe src="google-glass.html" name="janela" id="frame-spec" frameborder="0"></iframe>
+		<img src="_imagens/glass-esquema-marcado.jpg" height="280" width="500" alt="" usemap="#meumapa">
+		<map name="meumapa">
+			<area shape="poly" coords="183,218,265,208,268,245,185,256" href="google-glass.html#tela" target="janela" alt="">
+			<area shape="circle" coords="158,244,12" href="google-glass.html#camera" target="janela" alt="">
+			<area shape="circle" coords="73,52,12" href="google-glass.html#gadgets" target="janela" alt="">
+			<area shape="poly" coords="28,144,84,215,84,253,24,169" href="google-glass.html#sensores" target="janela" alt="">
+		</map>
+		<iframe scrolling="no" src="google-glass.html" name="janela" id="frame-spec" frameborder="0"></iframe>
 	</section>
 	</article>
 </section>
