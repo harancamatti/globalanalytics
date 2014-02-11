@@ -1,6 +1,7 @@
 jQuery(document).ready(function() {
-	js();
 	page = window.location.pathname;
+	js();
+	
 });
 
 
@@ -10,15 +11,15 @@ function js() {
 	$('#menu li')
 		.mouseout(function() {
 			if (page == '/index.html') {
-				$('#icone').attr("src", "_imagens/glass-oculos-preto-peq.png")
+				document.getElementById("icone").src="_imagens/glass-oculos-preto-peq.png"
 			} else if (page == '/specs.html') {
-				$('#icone').attr("src", "_imagens/especificacoes.png")
+				document.getElementById("icone").src="_imagens/especificacoes.png"
 			} else if (page == '/fotos.html') {
-				$('#icone').attr("src", "_imagens/fotos.png")
+				document.getElementById("icone").src="_imagens/fotos.png"
 			} else if (page == '/multimidia.html') {
-				$('#icone').attr("src", "_imagens/multimidia.png")
+				document.getElementById("icone").src="_imagens/multimidia.png"
 			} else if (page == '/fale-conosco.html') {
-				$('#icone').attr("src", "_imagens/contato.png")
+				document.getElementById("icone").src="_imagens/contato.png"
 			}
 		});
 	$('#menu li:nth-child(1)')
